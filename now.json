@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-        {"src": "server.js","use": "@now/node"}
+        {"src": "*.js","use": "@now/node"}
       ],
     "routes": [{
       "headers": {
@@ -9,7 +9,7 @@
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
         "Access-Control-Allow-Headers": "X-Requested-With, Content-Type, Accept"
       },
-      "src": "/raw?url=*",
+      "src": "/",
       "dest": "/server.js"
     }]
 }
